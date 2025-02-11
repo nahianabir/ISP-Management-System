@@ -1,0 +1,6 @@
+create table CUSTOMER_LOC
+(
+Customer_ID VARCHAR2(50)Primary key,
+CITY VARCHAR2(50) NOT NULL,
+COUNTRY VARCHAR2(50) NOT NULL
+);

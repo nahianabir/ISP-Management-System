@@ -1,0 +1,168 @@
+customer info-----
+INSERT INTO CUSTOMER_INFO VALUES ('C001', 'Md. Rahim', 'rahim.bd@example.com', 'Active', '01711111111');
+INSERT INTO CUSTOMER_INFO VALUES ('C002', 'Sharmin Akter', 'sharmin.ak@example.com', 'Inactive', '01822222222');
+INSERT INTO CUSTOMER_INFO VALUES ('C003', 'Tanvir Hossain', 'tanvir.h@example.com', 'Active', '01933333333');
+INSERT INTO CUSTOMER_INFO VALUES ('C004', 'Nasima Begum', 'nasima.b@example.com', 'Suspended', '01644444444');
+INSERT INTO CUSTOMER_INFO VALUES ('C005', 'Abdul Karim', 'karim.ab@example.com', 'Active', '01555555555');
+INSERT INTO CUSTOMER_INFO VALUES ('C006', 'Sumaiya Sultana', 'sumaiya.s@example.com', 'Inactive', '01366666666');
+INSERT INTO CUSTOMER_INFO VALUES ('C007', 'Jamal Uddin', 'jamal.u@example.com', 'Active', '01477777777');
+INSERT INTO CUSTOMER_INFO VALUES ('C008', 'Rina Khatun', 'rina.k@example.com', 'Suspended', '01788888888');
+INSERT INTO CUSTOMER_INFO VALUES ('C009', 'Habib Hasan', 'habib.h@example.com', 'Active', '01899999999');
+INSERT INTO CUSTOMER_INFO VALUES ('C010', 'Fatema Akter', 'fatema.a@example.com', 'Inactive', '01900000000');
+
+
+customer loc----
+INSERT INTO CUSTOMER_LOC VALUES ('C001', 'Dhaka', 'Bangladesh');
+INSERT INTO CUSTOMER_LOC VALUES ('C002', 'Chattogram', 'Bangladesh');
+INSERT INTO CUSTOMER_LOC VALUES ('C003', 'Khulna', 'Bangladesh');
+INSERT INTO CUSTOMER_LOC VALUES ('C004', 'Rajshahi', 'Bangladesh');
+INSERT INTO CUSTOMER_LOC VALUES ('C005', 'Sylhet', 'Bangladesh');
+INSERT INTO CUSTOMER_LOC VALUES ('C006', 'Barishal', 'Bangladesh');
+INSERT INTO CUSTOMER_LOC VALUES ('C007', 'Rangpur', 'Bangladesh');
+INSERT INTO CUSTOMER_LOC VALUES ('C008', 'Mymensingh', 'Bangladesh');
+INSERT INTO CUSTOMER_LOC VALUES ('C009', 'Gazipur', 'Bangladesh');
+INSERT INTO CUSTOMER_LOC VALUES ('C010', 'Narayanganj', 'Bangladesh');
+
+subscrip info-----
+
+INSERT INTO SUBSCRIPTION_INFO VALUES ('S001', 'C001', '2024-01-01', '2024-12-31', 'Active');
+INSERT INTO SUBSCRIPTION_INFO VALUES ('S002', 'C002', '2023-03-15', '2024-03-14', 'Expired');
+INSERT INTO SUBSCRIPTION_INFO VALUES ('S003', 'C003', '2024-05-20', '2025-05-19', 'Active');
+INSERT INTO SUBSCRIPTION_INFO VALUES ('S004', 'C004', '2022-08-10', '2023-08-09', 'Suspended');
+INSERT INTO SUBSCRIPTION_INFO VALUES ('S005', 'C005', '2024-06-01', '2025-05-31', 'Active');
+INSERT INTO SUBSCRIPTION_INFO VALUES ('S006', 'C006', '2021-09-12', '2022-09-11', 'Expired');
+INSERT INTO SUBSCRIPTION_INFO VALUES ('S007', 'C007', '2024-11-01', '2025-10-31', 'Active');
+INSERT INTO SUBSCRIPTION_INFO VALUES ('S008', 'C008', '2023-07-15', '2024-07-14', 'Suspended');
+INSERT INTO SUBSCRIPTION_INFO VALUES ('S009', 'C009', '2024-03-01', '2025-02-28', 'Active');
+INSERT INTO SUBSCRIPTION_INFO VALUES ('S010', 'C010', '2022-12-20', '2023-12-19', 'Expired');
+
+services----
+INSERT INTO SERVICES VALUES (101, 'Internet', 1500.00, 'Fiber Broadband 20 Mbps');
+INSERT INTO SERVICES VALUES (102, 'Internet', 2000.00, 'Fiber Broadband 50 Mbps');
+INSERT INTO SERVICES VALUES (103, 'Internet', 3000.00, 'Fiber Broadband 100 Mbps');
+INSERT INTO SERVICES VALUES (104, 'TV', 800.00, 'IPTV Basic Package');
+INSERT INTO SERVICES VALUES (105, 'TV', 1200.00, 'IPTV Premium Package');
+INSERT INTO SERVICES VALUES (106, 'Voice', 500.00, 'VoIP Basic');
+INSERT INTO SERVICES VALUES (107, 'Voice', 1000.00, 'VoIP Business');
+INSERT INTO SERVICES VALUES (108, 'Internet', 2500.00, 'Basic Package');
+INSERT INTO SERVICES VALUES (109, 'Internet', 4000.00, 'Student Package');
+INSERT INTO SERVICES VALUES (110, 'Internet', 1800.00, 'Wireless Broadband 30 Mbps');
+
+service type----
+
+INSERT INTO Service_Type (Type_ID, Service_Name, Type_Name) VALUES (1, 'Internet', 'Fiber Broadband 20 Mbps');
+INSERT INTO Service_Type (Type_ID, Service_Name, Type_Name) VALUES (2, 'Internet', 'Fiber Broadband 50 Mbps');
+INSERT INTO Service_Type (Type_ID, Service_Name, Type_Name) VALUES (3, 'Internet', 'Fiber Broadband 100 Mbps');
+INSERT INTO Service_Type (Type_ID, Service_Name, Type_Name) VALUES (4, 'TV', 'IPTV Basic Package');
+INSERT INTO Service_Type (Type_ID, Service_Name, Type_Name) VALUES (5, 'TV', 'IPTV Premium Package');
+INSERT INTO Service_Type (Type_ID, Service_Name, Type_Name) VALUES (6, 'Voice', 'VoIP Basic');
+INSERT INTO Service_Type (Type_ID, Service_Name, Type_Name) VALUES (7, 'Voice', 'VoIP Business');
+INSERT INTO Service_Type (Type_ID, Service_Name, Type_Name) VALUES (8, 'Internet', 'Basic Package');
+INSERT INTO Service_Type (Type_ID, Service_Name, Type_Name) VALUES (9, 'Internet', 'Student Package');
+INSERT INTO Service_Type (Type_ID, Service_Name, Type_Name) VALUES (10, 'Internet', 'Wireless Broadband 30 Mbps');
+
+payments----
+INSERT INTO PAYMENTS VALUES (1, 'rahim.bd@example.com', TO_DATE('2024-01-10', 'YYYY-MM-DD'), 1200.00, '1234-5678-9012-3456', NULL, NULL);
+INSERT INTO PAYMENTS VALUES (2, 'sharmin.ak@example.com', TO_DATE('2023-04-12', 'YYYY-MM-DD'), 800.00, NULL, 'BKASH12345678', NULL);
+INSERT INTO PAYMENTS VALUES (3, 'tanvir.h@example.com', TO_DATE('2024-06-18', 'YYYY-MM-DD'), 1500.00, NULL, NULL, 'NAGAD87654321');
+INSERT INTO PAYMENTS VALUES (4, 'nasima.b@example.com', TO_DATE('2023-07-22', 'YYYY-MM-DD'), 1000.00, '2345-6789-0123-4567', NULL, NULL);
+INSERT INTO PAYMENTS VALUES (5, 'karim.ab@example.com', TO_DATE('2024-03-15', 'YYYY-MM-DD'), 1800.00, NULL, 'BKASH23456789', NULL);
+INSERT INTO PAYMENTS VALUES (6, 'sumaiya.s@example.com', TO_DATE('2022-12-05', 'YYYY-MM-DD'), 500.00, NULL, NULL, 'NAGAD98765432');
+INSERT INTO PAYMENTS VALUES (7, 'jamal.u@example.com', TO_DATE('2024-05-20', 'YYYY-MM-DD'), 1200.00, '3456-7890-1234-5678', NULL, NULL);
+INSERT INTO PAYMENTS VALUES (8, 'rina.k@example.com', TO_DATE('2023-10-08', 'YYYY-MM-DD'), 1500.00, NULL, 'BKASH34567890', NULL);
+INSERT INTO PAYMENTS VALUES (9, 'habib.h@example.com', TO_DATE('2024-08-12', 'YYYY-MM-DD'), 1200.00, NULL, NULL, 'NAGAD09876543');
+INSERT INTO PAYMENTS VALUES (10, 'fatema.a@example.com', TO_DATE('2023-11-30', 'YYYY-MM-DD'), 4000.00, '4567-8901-2345-6789', NULL, NULL);
+
+problem box----
+INSERT INTO PROBLEM_BOX VALUES ('P001', 'C001', TO_DATE('2024-01-10', 'YYYY-MM-DD'), TO_DATE('2024-01-15', 'YYYY-MM-DD'), 'Resolved');
+INSERT INTO PROBLEM_BOX VALUES ('P002', 'C002', TO_DATE('2023-04-20', 'YYYY-MM-DD'), TO_DATE('2023-04-25', 'YYYY-MM-DD'), 'Resolved');
+INSERT INTO PROBLEM_BOX VALUES ('P003', 'C003', TO_DATE('2024-06-05', 'YYYY-MM-DD'), NULL, 'Pending');
+INSERT INTO PROBLEM_BOX VALUES ('P004', 'C004', TO_DATE('2023-09-18', 'YYYY-MM-DD'), TO_DATE('2023-09-22', 'YYYY-MM-DD'), 'Resolved');
+INSERT INTO PROBLEM_BOX VALUES ('P005', 'C005', TO_DATE('2024-03-12', 'YYYY-MM-DD'), NULL, 'In Progress');
+INSERT INTO PROBLEM_BOX VALUES ('P006', 'C006', TO_DATE('2023-07-01', 'YYYY-MM-DD'), TO_DATE('2023-07-06', 'YYYY-MM-DD'), 'Resolved');
+INSERT INTO PROBLEM_BOX VALUES ('P007', 'C007', TO_DATE('2024-04-15', 'YYYY-MM-DD'), NULL, 'Pending');
+INSERT INTO PROBLEM_BOX VALUES ('P008', 'C008', TO_DATE('2023-12-22', 'YYYY-MM-DD'), TO_DATE('2023-12-28', 'YYYY-MM-DD'), 'Resolved');
+INSERT INTO PROBLEM_BOX VALUES ('P009', 'C009', TO_DATE('2024-05-08', 'YYYY-MM-DD'), NULL, 'In Progress');
+INSERT INTO PROBLEM_BOX VALUES ('P010', 'C010', TO_DATE('2023-10-30', 'YYYY-MM-DD'), TO_DATE('2023-11-03', 'YYYY-MM-DD'), 'Resolved');
+
+issue stat----
+
+INSERT INTO ISSUE_STATUS VALUES ('IS001', 'P001', 'Closed');
+INSERT INTO ISSUE_STATUS VALUES ('IS002', 'P002', 'Open');
+INSERT INTO ISSUE_STATUS VALUES ('IS003', 'P003', 'Closed');
+INSERT INTO ISSUE_STATUS VALUES ('IS004', 'P004', 'Closed');
+INSERT INTO ISSUE_STATUS VALUES ('IS005', 'P005', 'In Progress');
+INSERT INTO ISSUE_STATUS VALUES ('IS006', 'P006', 'Closed');
+INSERT INTO ISSUE_STATUS VALUES ('IS007', 'P007', 'Open');
+INSERT INTO ISSUE_STATUS VALUES ('IS008', 'P008', 'Closed');
+INSERT INTO ISSUE_STATUS VALUES ('IS009', 'P009', 'In Progress');
+INSERT INTO ISSUE_STATUS VALUES ('IS010', 'P010', 'Closed');
+
+Tasks----
+INSERT INTO TASKS VALUES (1, 'P001', 'Diagnose internet connectivity issue', 'Pending');
+INSERT INTO TASKS VALUES (2, 'P002', 'Replace faulty modem', 'In Progress');
+INSERT INTO TASKS VALUES (3, 'P003', 'Upgrade subscription plan', 'Completed');
+INSERT INTO TASKS VALUES (4, 'P004', 'Resolve billing discrepancy', 'Pending_1');
+INSERT INTO TASKS VALUES (5, 'P005', 'Fix IPTV buffering issue', 'Completed_1');
+INSERT INTO TASKS VALUES (6, 'P006', 'Troubleshoot VoIP call drops', 'In Progress_1');
+INSERT INTO TASKS VALUES (7, 'P007', 'Reinstall network drivers', 'Pending_2');
+INSERT INTO TASKS VALUES (8, 'P008', 'Address slow broadband speed', 'Completed_2');
+INSERT INTO TASKS VALUES (9, 'P009', 'Resolve payment processing error', 'Pending_3');
+INSERT INTO TASKS VALUES (10, 'P010', 'Configure cloud storage access', 'In Progress_2');
+
+task status----
+
+INSERT INTO Task_Status (Status_ID, Task_ID, Status_type) VALUES (1, 1, 'Pending');
+INSERT INTO Task_Status (Status_ID, Task_ID, Status_type) VALUES (2, 2, 'In Progress');
+INSERT INTO Task_Status (Status_ID, Task_ID, Status_type) VALUES (3, 3, 'Completed');
+INSERT INTO Task_Status (Status_ID, Task_ID, Status_type) VALUES (4, 4, 'Pending_1');
+INSERT INTO Task_Status (Status_ID, Task_ID, Status_type) VALUES (5, 5, 'Completed_1');
+INSERT INTO Task_Status (Status_ID, Task_ID, Status_type) VALUES (6, 6, 'In Progress_1');
+INSERT INTO Task_Status (Status_ID, Task_ID, Status_type) VALUES (7, 7, 'Pending_2');
+INSERT INTO Task_Status (Status_ID, Task_ID, Status_type) VALUES (8, 8, 'Completed_2');
+INSERT INTO Task_Status (Status_ID, Task_ID, Status_type) VALUES (9, 9, 'Pending_3');
+INSERT INTO Task_Status (Status_ID, Task_ID, Status_type) VALUES (10, 10, 'In Progress_2');
+
+employee---
+
+INSERT INTO Employee (Employee_ID, Name, Phone_Number, Role, Email) VALUES ('E001', 'Mahmud Hasan', '01712345678', 'Network Engineer', 'mahmud.hasan@example.com');
+INSERT INTO Employee (Employee_ID, Name, Phone_Number, Role, Email) VALUES ('E002', 'Nusrat Jahan', '01823456789', 'Technical Support', 'nusrat.jahan@example.com');
+INSERT INTO Employee (Employee_ID, Name, Phone_Number, Role, Email) VALUES ('E003', 'Rakib Hossain', '01934567890', 'System Administrator', 'rakib.hossain@example.com');
+INSERT INTO Employee (Employee_ID, Name, Phone_Number, Role, Email) VALUES ('E004', 'Tania Akter', '01645678901', 'Billing Specialist', 'tania.akter@example.com');
+INSERT INTO Employee (Employee_ID, Name, Phone_Number, Role, Email) VALUES ('E005', 'Shakil Ahmed', '01556789012', 'Field Technician', 'shakil.ahmed@example.com');
+INSERT INTO Employee (Employee_ID, Name, Phone_Number, Role, Email) VALUES ('E006', 'Jannat Ferdous', '01367890123', 'IT Support Specialist', 'jannat.ferdous@example.com');
+INSERT INTO Employee (Employee_ID, Name, Phone_Number, Role, Email) VALUES ('E007', 'Habib Ullah', '01478901234', 'Customer Service Representative', 'habib.ullah@example.com');
+
+Role----
+INSERT INTO Role (Role_No, Role) VALUES (1, 'Network Engineer');
+INSERT INTO Role (Role_No, Role) VALUES (2, 'Technical Support');
+INSERT INTO Role (Role_No, Role) VALUES (3, 'System Administrator');
+INSERT INTO Role (Role_No, Role) VALUES (4, 'Billing Specialist');
+INSERT INTO Role (Role_No, Role) VALUES (5, 'Field Technician');
+INSERT INTO Role (Role_No, Role) VALUES (6, 'IT Support Specialist');
+INSERT INTO Role (Role_No, Role) VALUES (7, 'Customer Service Representative');
+
+
+Employee_Task_Status----
+
+INSERT INTO Employee_Task_Status (Employee_Task_Status_NO, Employee_ID, Task_ID, Status_type, Task_Description) 
+VALUES (1, 'E001', 1, 'Pending', 'Diagnose internet connectivity issue');
+
+INSERT INTO Employee_Task_Status (Employee_Task_Status_NO, Employee_ID, Task_ID, Status_type, Task_Description) 
+VALUES (2, 'E002', 2, 'In Progress', 'Replace faulty modem');
+
+INSERT INTO Employee_Task_Status (Employee_Task_Status_NO, Employee_ID, Task_ID, Status_type, Task_Description) 
+VALUES (3, 'E003', 3, 'Completed', 'Upgrade subscription plan');
+
+INSERT INTO Employee_Task_Status (Employee_Task_Status_NO, Employee_ID, Task_ID, Status_type, Task_Description) 
+VALUES (4, 'E004', 4, 'Pending_1', 'Resolve billing discrepancy');
+
+INSERT INTO Employee_Task_Status (Employee_Task_Status_NO, Employee_ID, Task_ID, Status_type, Task_Description) 
+VALUES (5, 'E005', 5, 'Completed_1', 'Fix IPTV buffering issue');
+
+INSERT INTO Employee_Task_Status (Employee_Task_Status_NO, Employee_ID, Task_ID, Status_type, Task_Description) 
+VALUES (6, 'E006', 6, 'In Progress_1', 'Troubleshoot VoIP call drops');
+
+INSERT INTO Employee_Task_Status (Employee_Task_Status_NO, Employee_ID, Task_ID, Status_type, Task_Description) 
+VALUES (7, 'E007', 7, 'Pending_2', 'Reinstall network drivers');
+
